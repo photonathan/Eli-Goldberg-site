@@ -33,14 +33,16 @@ defaults:
 breadcrumbs: true
 
 # Navigation links in the header
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "Teaching"
-    url: "/teaching/"
-  - title: "Performance"
-    url: "/performance/"
-  - title: "Contact"
-    url: "/contact/"
+
+header:
+  nav:
+    - title: "Home"
+      url: "/"
+    - title: "Teaching"
+      url: "/teaching/"
+    - title: "Performance"
+      url: "/performance/"
+    - title: "Contact"
+      url: "/contact/"
 
 
