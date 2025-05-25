@@ -2,7 +2,7 @@ title: "Eli Goldberg"
 description: "Music Educator & Performer"
 baseurl: "Eli-Goldberg-site"
 url: "https://photonathan.github.io"
-remote_theme: "remote_theme: "mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-include-cache
