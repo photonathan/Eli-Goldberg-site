@@ -37,12 +37,11 @@ breadcrumbs: true
 header:
   nav:
     - title: "Home"
-      url: "/"
+      url: "/Eli-Goldberg-site/"
     - title: "Teaching"
-      url: "/teaching/"
+      url: "/Eli-Goldberg-site/teaching/"
     - title: "Performance"
-      url: "/performance/"
+      url: "/Eli-Goldberg-site/performance/"
     - title: "Contact"
-      url: "/contact/"
-
+      url: "/Eli-Goldberg-site/contact/
 
