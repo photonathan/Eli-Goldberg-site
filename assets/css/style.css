@@ -14,6 +14,8 @@ a{color:var(--accent); text-decoration:none}
 .site-title{margin:0; font-family: 'Poppins', Arial, sans-serif; font-weight:700; letter-spacing:0.5px; color:var(--accent); font-size:1.6rem}
 .site-sub{margin:2px 0 0; color:#666; font-size:0.95rem}
 .site-nav a{margin-left:14px; color:#333; font-weight:600}
+.site-nav{display:flex; align-items:center}
+.header-resume{margin-left:14px}
 .hero{height:340px; background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative}
 .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
@@ -29,6 +31,8 @@ h2.section-title{font-family:'Poppins', Arial, sans-serif; color:var(--accent); 
 footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#666}
 @media (max-width:800px){
   .site-header .header-inner{flex-direction:column; align-items:flex-start}
+  /* make resume button sit nicely on small screens */
+  .header-resume{align-self:flex-end; margin-top:8px}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .hero{height:220px}
   .hero-overlay{margin-left:14px; padding:18px}
