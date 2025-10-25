@@ -1,11 +1,12 @@
 ---
-title: "Contact"
+layout: default
+title: "Contact — Eli Goldberg"
+description: "Get in touch with Eli for lessons, performances, and collaborations."
 permalink: /contact/
-layout: single
-author_profile: true
 ---
 
-Feel free to reach out for teaching opportunities, performance collaborations, or private lessons.
-
-- **Email**: [MrEliGoldberg@gmail.com](mailto:MrEliGoldberg@gmail.com)  
-- **Phone**: (609) 384-4537
+<section class="card">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: <a href="mailto:MrEliGoldberg@gmail.com">MrEliGoldberg@gmail.com</a></p>
+  <p>To book Eli for performances, please email with dates, location, and ensemble size.</p>
+</section>

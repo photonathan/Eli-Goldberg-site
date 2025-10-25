@@ -1,12 +1,20 @@
 ---
-title: "Performance"
+layout: default
+title: "Performance — Eli Goldberg"
+description: "Performance highlights and experience."
 permalink: /performance/
-layout: single
-author_profile: true
 ---
 
-Eli performs regularly as a **vocalist and trombonist** across the region. His performance experience brings real-world relevance into the classroom, inspiring students to pursue excellence in music.
+<section class="card">
+  <h2 class="section-title">Performance Highlights</h2>
+  <ul>
+    <li>Professional freelance musician (vocal & trombone soloist) — 2013–Present</li>
+    <li>Performed in regional concerts, community events, and private engagements</li>
+    <li>Music director and accompanist for summer theater programs</li>
+  </ul>
+</section>
 
-He has served as:
-- Music Director for Broadway Theater of Pitman Summer Camp
-- Lead counselor at Rowan University Summer Music Camps
+<section class="card">
+  <h2 class="section-title">Repertoire & Skills</h2>
+  <p>Vocal performance, trombone, piano accompaniment, choral arranging, and ensemble leadership.</p>
+</section>

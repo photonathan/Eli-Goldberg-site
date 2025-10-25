@@ -1,0 +1,40 @@
+:root{
+  --bg:#fbfaf7;
+  --card:#ffffff;
+  --accent:#0b4a6f;
+  --accent-2:#d4af37;
+  --muted:#444;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family: 'Merriweather', Georgia, serif; margin:0; color:var(--muted); background:var(--bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+a{color:var(--accent); text-decoration:none}
+.container{max-width:var(--container); margin:0 auto; padding:28px;}
+.site-header .header-inner{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+.site-title{margin:0; font-family: 'Poppins', Arial, sans-serif; font-weight:700; letter-spacing:0.5px; color:var(--accent); font-size:1.6rem}
+.site-sub{margin:2px 0 0; color:#666; font-size:0.95rem}
+.site-nav a{margin-left:14px; color:#333; font-weight:600}
+.hero{height:340px; background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative}
+.hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px}
+.hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;margin-top:10px}
+.site-main{padding:30px 0}
+h2.section-title{font-family:'Poppins', Arial, sans-serif; color:var(--accent); margin-bottom:10px}
+.card{background:var(--card); border-radius:10px; padding:18px; box-shadow:0 6px 18px rgba(30,30,30,0.06); margin-bottom:18px}
+.two-col{display:flex; gap:20px; align-items:flex-start}
+.two-col .col{flex:1}
+.gallery-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px}
+.gallery-grid img{width:100%; height:180px; object-fit:cover; border-radius:8px}
+.testimonial{padding:14px; border-left:4px solid var(--accent-2); background:linear-gradient(180deg,#fff,#fbfbfb); border-radius:6px}
+footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#666}
+@media (max-width:800px){
+  .site-header .header-inner{flex-direction:column; align-items:flex-start}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .hero{height:220px}
+  .hero-overlay{margin-left:14px; padding:18px}
+}
+@media (max-width:480px){
+  .gallery-grid{grid-template-columns:1fr}
+  .site-title{font-size:1.2rem}
+  .hero-overlay h2{font-size:1.2rem}
+}
