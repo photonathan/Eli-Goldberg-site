@@ -36,10 +36,10 @@
     <!-- accessible heading for screen readers and crawlability -->
     <h1 class="sr-only">Eli Goldberg — Music that teaches, lifts, and connects</h1>
 
-    <!-- inline SVG hero (decorative but contains the visual heading/subtitle) -->
+    <!-- inline SVG hero (decorative only). the visible heading has been moved into the DOM for reliable responsive scaling -->
     <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="heroTitle heroDesc">
-      <title id="heroTitle">Eli Goldberg — Music that teaches, lifts, and connects</title>
-      <desc id="heroDesc">Background music notes with the heading and subheading: Choir &amp; ensemble direction, Private lessons, Accompaniment &amp; performance.</desc>
+      <title id="heroTitle">Decorative background music notes</title>
+      <desc id="heroDesc">Background music notes and pattern; visual heading is provided in page HTML for accessibility and responsiveness.</desc>
       <defs>
         <linearGradient id="bg" x1="0" x2="1">
           <stop offset="0" stop-color="#ffffff"/>
@@ -82,11 +82,12 @@
         <text x="1285" y="260" font-size="34">♫</text>
       </g>
 
-      <!-- main heading centered -->
-      <g>
-        <text class="title" x="50%" y="160" text-anchor="middle">Eli Goldberg — Music that teaches, lifts, and connects</text>
-  <!-- subtitle moved to DOM (.site-sub); keep SVG decorative only -->
-      </g>
+    </svg>
+
+    <!-- visible hero heading (DOM) so it scales reliably across browsers -->
+    <div class="hero-content" aria-hidden="true">
+      <h2 class="hero-title">Eli Goldberg — Music that teaches, lifts, and connects</h2>
+    </div>
     </svg>
 
   </div>

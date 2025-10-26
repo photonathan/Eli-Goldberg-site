@@ -35,8 +35,11 @@ a{color:var(--accent); text-decoration:none}
 .nav-toggle[aria-expanded="true"] .hamburger{background:transparent}
 .nav-toggle[aria-expanded="true"] .hamburger::before{transform:translateY(7px) rotate(45deg)}
 .nav-toggle[aria-expanded="true"] .hamburger::after{transform:translateY(-7px) rotate(-45deg)}
-.hero{height:auto; background-image: none; background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative; background-color:transparent}
-.hero svg{width:100%; height:340px; display:block}
+.hero{background-image:none; background-size:cover; background-position:center; display:block; margin-top:8px; border-radius:10px; overflow:hidden; position:relative; background-color:transparent; padding:0; min-height:clamp(220px,28vh,320px)}
+.hero svg{width:100%; height:100%; display:block}
+/* hero heading (moved into DOM to avoid SVG text clipping). center it over the SVG and scale fluidly */
+.hero-content{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:2; width:92%; max-width:var(--container); text-align:center; pointer-events:none}
+.hero-title{font-family:'Poppins', Arial, sans-serif; color:var(--accent); font-weight:700; margin:0; line-height:1.02; pointer-events:none; text-wrap:balance; font-size:clamp(1.4rem,3.6vw + 0.6rem,3.6rem)}
 .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px; display:flex; flex-direction:column; gap:8px; z-index:2}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
 
@@ -62,8 +65,8 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
   .site-nav a{margin-left:0; padding:10px 12px; border-top:1px solid rgba(0,0,0,0.04); display:block}
   .header-resume{margin-top:12px; width:100%; display:block; text-align:center}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
-  .hero{height:220px}
-  .hero svg{height:220px}
+  .hero{min-height:220px}
+  .hero svg{height:100%}
   /* remove left offset on narrower screens so overlay stays centered */
   .hero-overlay{margin-left:0; padding:18px; max-width:unset}
   .container{padding:20px}
@@ -78,8 +81,8 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
   .site-title{font-size:1.2rem}
   .hero-overlay h2{font-size:1.1rem}
   .hero-text h2{font-size:1.05rem}
-  .hero{height:180px}
-  .hero svg{height:180px}
+  .hero{min-height:180px}
+  .hero svg{height:100%}
   .hero-overlay{margin-left:0; padding:14px}
   /* make primary buttons full width on very small screens */
   .btn{display:block; width:100%; text-align:center; padding:12px 14px}
@@ -93,7 +96,7 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
 .btn .btn-text{vertical-align:middle}
 
 /* visually-hidden (accessible text only) */
-.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);white-space:nowrap;border:0;padding:0;margin:-1px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* typography tweaks for legibility on small screens */
 body{line-height:1.6}
