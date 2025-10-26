@@ -28,6 +28,62 @@
         <span class="btn-text">Download Resume</span>
       </a>
   </div>
-  <div class="hero" style="background-image: url('/assets/img/hero-placeholder.svg')">
+  <div class="hero">
+    <!-- accessible heading for screen readers and crawlability -->
+    <h1 class="sr-only">Eli Goldberg — Music that teaches, lifts, and connects</h1>
+
+    <!-- inline SVG hero (decorative but contains the visual heading/subtitle) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="heroTitle heroDesc">
+      <title id="heroTitle">Eli Goldberg — Music that teaches, lifts, and connects</title>
+      <desc id="heroDesc">Background music notes with the heading and subheading: Choir &amp; ensemble direction, Private lessons, Accompaniment &amp; performance.</desc>
+      <defs>
+        <linearGradient id="bg" x1="0" x2="1">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset="1" stop-color="#f6f9ff"/>
+        </linearGradient>
+        <style>
+          .notes { fill:#0b4a6f; opacity:0.06; font-family: serif }
+          .title { fill:#0b4a6f; font-family: 'Poppins', Arial, sans-serif; font-size:48px; font-weight:700 }
+          .subtitle { fill:#0b4a6f; font-family: 'Merriweather', Georgia, serif; font-size:20px }
+        </style>
+      </defs>
+
+      <rect width="100%" height="100%" fill="url(#bg)" />
+
+      <!-- decorative music notes (dense) -->
+      <g class="notes" font-size="120">
+        <text x="20" y="80">♫</text>
+        <text x="120" y="40" font-size="70">♪</text>
+        <text x="220" y="140" font-size="90">♬</text>
+        <text x="340" y="210" font-size="60">♪</text>
+        <text x="460" y="80" font-size="130">♫</text>
+        <text x="580" y="150" font-size="80">♪</text>
+        <text x="700" y="60" font-size="140">♬</text>
+        <text x="820" y="200" font-size="70">♪</text>
+        <text x="940" y="120" font-size="100">♫</text>
+        <text x="1060" y="80" font-size="60">♪</text>
+        <text x="1180" y="170" font-size="90">♬</text>
+        <text x="1300" y="40" font-size="110">♪</text>
+        <text x="1420" y="140" font-size="80">♫</text>
+        <text x="85" y="220" font-size="36">♪</text>
+        <text x="205" y="260" font-size="48">♫</text>
+        <text x="325" y="120" font-size="40">♪</text>
+        <text x="445" y="240" font-size="34">♬</text>
+        <text x="565" y="200" font-size="44">♪</text>
+        <text x="685" y="220" font-size="38">♪</text>
+        <text x="805" y="260" font-size="30">♫</text>
+        <text x="925" y="240" font-size="42">♪</text>
+        <text x="1045" y="260" font-size="36">♬</text>
+        <text x="1165" y="220" font-size="40">♪</text>
+        <text x="1285" y="260" font-size="34">♫</text>
+      </g>
+
+      <!-- main heading centered -->
+      <g>
+        <text class="title" x="50%" y="160" text-anchor="middle">Eli Goldberg — Music that teaches, lifts, and connects</text>
+        <text class="subtitle" x="50%" y="200" text-anchor="middle">Choir &amp; ensemble direction • Private lessons • Accompaniment &amp; performance</text>
+      </g>
+    </svg>
+
   </div>
 </header>

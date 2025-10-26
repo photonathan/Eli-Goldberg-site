@@ -10,9 +10,12 @@
 body{font-family: 'Merriweather', Georgia, serif; margin:0; color:var(--muted); background:var(--bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
 a{color:var(--accent); text-decoration:none}
 .container{max-width:var(--container); margin:0 auto; padding:28px;}
-.site-header .header-inner{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+.site-header .header-inner{display:flex; align-items:flex-start; justify-content:space-between; gap:20px;}
 .site-title{margin:0; font-family: 'Poppins', Arial, sans-serif; font-weight:700; letter-spacing:0.5px; color:var(--accent); font-size:1.6rem}
-.site-sub{margin:2px 0 0; color:#666; font-size:0.95rem; white-space:nowrap}
+.site-sub{margin:6px 0 0; color:#6b6b6b; font-size:0.95rem; letter-spacing:0.2px}
+
+.brand{display:flex; flex-direction:column; align-items:flex-start}
+.site-title{margin-bottom:0}
 .site-nav a{margin-left:14px; color:#333; font-weight:600}
 /* larger tap targets for mobile */
 .site-nav a{padding:6px 8px; border-radius:6px}
@@ -29,7 +32,8 @@ a{color:var(--accent); text-decoration:none}
 .nav-toggle[aria-expanded="true"] .hamburger{background:transparent}
 .nav-toggle[aria-expanded="true"] .hamburger::before{transform:translateY(7px) rotate(45deg)}
 .nav-toggle[aria-expanded="true"] .hamburger::after{transform:translateY(-7px) rotate(-45deg)}
-.hero{height:340px; background-image: url('/assets/img/hero-placeholder.svg'); background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative; background-color:transparent}
+.hero{height:auto; background-image: none; background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative; background-color:transparent}
+.hero svg{width:100%; height:340px; display:block}
 .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px; display:flex; flex-direction:column; gap:8px; z-index:2}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
 
@@ -56,6 +60,7 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
   .header-resume{margin-top:12px; width:100%; display:block; text-align:center}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .hero{height:220px}
+  .hero svg{height:220px}
   /* remove left offset on narrower screens so overlay stays centered */
   .hero-overlay{margin-left:0; padding:18px; max-width:unset}
   .container{padding:20px}
@@ -70,6 +75,7 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
   .hero-overlay h2{font-size:1.1rem}
   .hero-text h2{font-size:1.05rem}
   .hero{height:180px}
+  .hero svg{height:180px}
   .hero-overlay{margin-left:0; padding:14px}
   /* make primary buttons full width on very small screens */
   .btn{display:block; width:100%; text-align:center; padding:12px 14px}
@@ -81,6 +87,9 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
 .btn:active{transform:translateY(1px)}
 .header-resume .icon-download{vertical-align:middle;margin-right:8px;display:inline-block}
 .btn .btn-text{vertical-align:middle}
+
+/* visually-hidden (accessible text only) */
+.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);white-space:nowrap;border:0;padding:0;margin:-1px}
 
 /* typography tweaks for legibility on small screens */
 body{line-height:1.6}
