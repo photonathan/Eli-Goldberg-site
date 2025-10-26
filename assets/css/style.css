@@ -48,7 +48,7 @@ a{color:var(--accent); text-decoration:none}
 /* hero subtitle (roles) placed under the title; use spans so separators and wrapping are controllable */
 .hero-sub{margin:10px 0 0; color:var(--accent); font-size:clamp(0.95rem,1.2vw + 0.2rem,1.05rem); letter-spacing:0.2px}
 .hero-sub span{display:inline-block; white-space:nowrap}
-.hero-sub span + span::before{content:",\00a0"; color:var(--accent); margin:0 6px; display:inline-block}
+.hero-sub span + span::before{content:", "; color:var(--accent); margin:0 6px; display:inline-block}
 .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px; display:flex; flex-direction:column; gap:8px; z-index:2}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
 
