@@ -29,7 +29,7 @@ a{color:var(--accent); text-decoration:none}
 .nav-toggle[aria-expanded="true"] .hamburger{background:transparent}
 .nav-toggle[aria-expanded="true"] .hamburger::before{transform:translateY(7px) rotate(45deg)}
 .nav-toggle[aria-expanded="true"] .hamburger::after{transform:translateY(-7px) rotate(-45deg)}
-.hero{height:340px; background-image:none; background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative; background-color:transparent}
+.hero{height:340px; background-image: url('/assets/img/hero-placeholder.svg'); background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative; background-color:transparent}
 .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px; display:flex; flex-direction:column; gap:8px; z-index:2}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
 
