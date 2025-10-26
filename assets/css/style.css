@@ -28,7 +28,7 @@ a{color:var(--accent); text-decoration:none}
 .nav-toggle[aria-expanded="true"] .hamburger::before{transform:translateY(7px) rotate(45deg)}
 .nav-toggle[aria-expanded="true"] .hamburger::after{transform:translateY(-7px) rotate(-45deg)}
 .hero{height:340px; background-size:cover; background-position:center; display:flex; align-items:center; margin-top:18px; border-radius:10px; overflow:hidden; position:relative}
-.hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px}
+.hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px; display:flex; flex-direction:column; gap:8px; z-index:2}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
 .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;margin-top:10px}
 .site-main{padding:30px 0}
@@ -72,7 +72,7 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
 
 /* typography tweaks for legibility on small screens */
 body{line-height:1.6}
-.hero-overlay p{font-size:0.98rem; line-height:1.5}
+.hero-overlay p{font-size:0.98rem; line-height:1.5; margin:0}
 .hero-overlay h2{line-height:1.15}
 @media (max-width:600px){
   body{font-size:16px}
