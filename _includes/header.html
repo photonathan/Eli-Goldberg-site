@@ -5,6 +5,14 @@
       <!-- visible subtitle for the header (concise) -->
       <p class="site-sub">Music Teacher</p>
       </div>
+      <!-- Decorative in-page image (WebP preferred, JPEG fallback).
+           Placed offscreen so browsers will fetch the modern format for in-page use
+           while the Open Graph meta continues to point to the JPEG. Marked aria-hidden
+           because it's purely decorative. -->
+      <picture class="og-preview" aria-hidden="true" role="img" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+        <source srcset="{{ page.og_image | default: site.og_image | replace: '.jpg', '.webp' }}" type="image/webp" />
+        <img src="{{ page.og_image | default: site.og_image }}" alt="" width="1" height="1" loading="eager" />
+      </picture>
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="hamburger" aria-hidden="true"></span>
       </button>

@@ -14,6 +14,8 @@
   <meta name="twitter:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
   <meta name="twitter:image" content="{{ page.og_image | default: site.og_image }}" />
   <link rel="image_src" href="{{ page.og_image | default: site.og_image }}" />
+  <!-- preload a WebP version of the OG image so browsers can fetch the modern format for in-page rendering -->
+  <link rel="preload" as="image" href="{{ page.og_image | default: site.og_image | replace: '.jpg', '.webp' }}" type="image/webp" />
   <link rel="icon" href="{{ site.favicon }}" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
