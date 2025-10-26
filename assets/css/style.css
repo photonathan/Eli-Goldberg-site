@@ -46,9 +46,9 @@ a{color:var(--accent); text-decoration:none}
 .hero-content{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:2; width:92%; max-width:var(--container); text-align:center; pointer-events:none}
 .hero-title{font-family:'Poppins', Arial, sans-serif; color:var(--accent); font-weight:700; margin:0; line-height:1.02; pointer-events:none; text-wrap:balance; font-size:clamp(1.4rem,3.6vw + 0.6rem,3.6rem)}
 /* hero subtitle (roles) placed under the title; use spans so separators and wrapping are controllable */
-.hero-sub{margin:10px 0 0; color:var(--accent); opacity:0.9; font-size:clamp(0.95rem,1.2vw + 0.2rem,1.05rem); letter-spacing:0.2px}
+.hero-sub{margin:10px 0 0; color:var(--accent); font-size:clamp(0.95rem,1.2vw + 0.2rem,1.05rem); letter-spacing:0.2px}
 .hero-sub span{display:inline-block; white-space:nowrap}
-.hero-sub span + span::before{content:"\00a0•\00a0"; color:rgba(11,74,111,0.75); margin:0 6px; display:inline-block}
+.hero-sub span + span::before{content:",\00a0"; color:var(--accent); margin:0 6px; display:inline-block}
 .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6)); padding:28px; margin-left:40px; max-width:700px; border-radius:8px; display:flex; flex-direction:column; gap:8px; z-index:2}
 .hero-overlay h2{margin:0 0 8px; font-family:'Poppins', Arial, sans-serif; font-size:1.8rem; color:var(--accent)}
 
@@ -106,6 +106,13 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
   .header-resume{right:12px; top:12px}
   .header-resume .btn{display:inline-flex; width:auto; margin:0; padding:10px 14px}
   .container{padding:14px}
+
+  /* On very narrow devices make the resume CTA an icon-only square to save space */
+  @media (max-width:420px){
+    .header-resume .btn{padding:6px; width:40px; height:40px; border-radius:8px; justify-content:center}
+    .header-resume .btn .btn-text{display:none}
+    .header-resume .icon-download{width:18px;height:18px;margin:0}
+  }
 }
 
 /* transitions & small polish */
