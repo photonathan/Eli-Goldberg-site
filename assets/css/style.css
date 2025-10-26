@@ -61,6 +61,8 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
   .container{padding:20px}
   /* allow subtitle to wrap on narrow screens */
   .site-sub{white-space:normal}
+  /* hide the separate header 'Hire Me' link when nav is collapsed to avoid duplication */
+  .hire-link{display:none}
 }
 @media (max-width:480px){
   .gallery-grid{grid-template-columns:1fr}
