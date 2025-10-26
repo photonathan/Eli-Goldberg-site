@@ -122,8 +122,11 @@ footer.site-footer{padding:18px 0; margin-top:30px; text-align:center; color:#66
 
 /* On very narrow devices make the resume CTA an icon-only square to save space */
 @media (max-width:420px){
-  .header-resume .btn{padding:6px; width:40px; height:40px; border-radius:8px; justify-content:center}
-  .header-resume .btn .btn-text{display:none}
+  /* enforce compact icon-only resume CTA on very small screens */
+  .site-header .header-inner{padding-right:64px}
+  .header-resume{position:absolute !important; right:12px !important; top:10px !important; z-index:60 !important}
+  .header-resume .btn{padding:6px !important; width:40px !important; height:40px !important; border-radius:8px !important; justify-content:center !important}
+  .header-resume .btn .btn-text{display:none !important}
   .header-resume .icon-download{width:18px;height:18px;margin:0}
 }
 /* transitions & small polish */
