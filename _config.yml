@@ -5,6 +5,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mreligoldberg.com" # the base hostname & protocol for your site, e.g. https://example.com
 show_posts: false
 # Placeholders for Open Graph
-og_image: "/assets/img/og-placeholder.jpg"
+# Use the uploaded E-shaped music image for social previews. Drop the file at assets/img/og-e.jpg
+# Use the optimized OG image generated from the supplied E-shaped music image
+og_image: "/assets/img/og-e-1200-opt.jpg"
 favicon: "/assets/img/favicon.svg"
 permalink: /:title/
