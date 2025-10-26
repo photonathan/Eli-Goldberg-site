@@ -1,9 +1,14 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="brand">
-      <a href="/"><h1 class="site-title">Mr. Eli Goldberg</h1></a>
-  <p class="site-sub">Music Teacher&nbsp;•&nbsp;Accompanist&nbsp;•&nbsp;Conductor</p>
-    </div>
+        <a href="/"><h1 class="site-title">Mr. Eli Goldberg</h1></a>
+      <!-- visible subtitle moved into the DOM so we can style and control wrapping responsively -->
+      <p class="site-sub">
+        <span>Choir &amp; ensemble direction</span>
+        <span>Private lessons</span>
+        <span>Accompaniment &amp; performance</span>
+      </p>
+      </div>
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="hamburger" aria-hidden="true"></span>
       </button>
@@ -80,7 +85,7 @@
       <!-- main heading centered -->
       <g>
         <text class="title" x="50%" y="160" text-anchor="middle">Eli Goldberg — Music that teaches, lifts, and connects</text>
-        <text class="subtitle" x="50%" y="200" text-anchor="middle">Choir &amp; ensemble direction • Private lessons • Accompaniment &amp; performance</text>
+  <!-- subtitle moved to DOM (.site-sub); keep SVG decorative only -->
       </g>
     </svg>
 
