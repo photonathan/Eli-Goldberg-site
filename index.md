@@ -6,14 +6,16 @@ og_image: /assets/img/og-placeholder.jpg
 ---
 
 <section class="card">
-  <h2 class="section-title">About</h2>
-  <p><strong>Eli Goldberg</strong> is an experienced K–12 music educator and professional freelance musician with strengths in vocal and instrumental instruction, curriculum design, and ensemble direction. An accomplished accompanist (piano), conductor, and private teacher, Eli coordinates performances and creates engaging, cross-curricular lessons.</p>
+  <h2 class="section-title">About Me</h2>
+  <p><strong>Welcome! I'm Eli Goldberg,</strong> an experienced K–12 music educator and professional musician based in Voorhees, NJ. My passion lies in inspiring young minds through the power of music, blending creativity with structured teaching to nurture talent and confidence.</p>
+  <p>With expertise in vocal and instrumental instruction, I design engaging curriculums, lead dynamic ensembles, and mentor students in achieving personal and academic excellence. Beyond the classroom, I actively perform as a vocalist and trombonist, bringing music to life on stage and in private lessons.</p>
+  <p>Let’s create something melodious together!</p>
 </section>
-
+ 
 <section class="two-col">
   <div class="col card">
     <h3>Teaching</h3>
-    <p>Certified NJ music teacher with experience teaching general music, band, orchestra, and choir across grade levels. Skilled in curriculum development, rehearsal planning, and student assessments.</p>
+    <p>Certified NJ music teacher with experience teaching general music, band, orchestra, and choir across grade levels. Skilled in curriculum development, rehearsal planning, and student assessment.</p>
     <ul>
       <li>General music: PreK–5</li>
       <li>Orchestra & band pull-out lessons</li>
@@ -30,7 +32,7 @@ og_image: /assets/img/og-placeholder.jpg
     </ul>
   </div>
 </section>
-
+ 
 <section class="card">
   <h2 class="section-title">Quick Links</h2>
   <p><a href="/_pages/teaching.html">Teaching details</a> · <a href="/_pages/performance.html">Performance highlights</a> · <a href="/_pages/gallery.html">Gallery</a> · <a href="/_pages/testimonials.html">Testimonials</a></p>
